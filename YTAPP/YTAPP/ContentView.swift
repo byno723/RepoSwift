@@ -23,7 +23,9 @@ struct ContentView_Previews: PreviewProvider {
 struct Home : View{
     var body: some View{
         NavigationView{
-            Text("Hello Ini Konten")
+          
+            konten()
+            
                 .navigationBarItems(leading: HStack{
                     Button(action:{print("ok")}){
                         Image("youtube").renderingMode(.original).resizable()
@@ -49,6 +51,39 @@ struct Home : View{
                     
                 }
             )
+                .navigationBarTitle("", displayMode: .inline)
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
+       
+    }
+    
+}
+
+struct konten :View{
+    var body: some View{
+        List{
+            ZStack(alignment:.bottomTrailing){
+                Image("naruto").resizable().aspectRatio(contentMode: .fill)
+                
+                Text("10:00").padding(.all, 5)
+                    .foregroundColor(Color.white)
+                    .font(.caption)
+                    .background(Color.black)
+                    .cornerRadius(5)
+                    .padding(.trailing,5)
+                    .padding(.bottom,5)
+            }
+            HStack(spacing:10){
+                Image("profil").resizable().frame(width:30, height: 30).clipShape(Circle())
+                VStack(alignment:.leading){
+                    Text("Naruto Shippuden #1").font(.headline)
+                    HStack{
+                        Text("Text ini adalah deskripsi -300x ditonton - 9 jam yang lalu").font(.caption)
+                    }
+                }
+                Spacer()
+                Image(systemName: "list.bullet")
+            }
         }
     }
 }
