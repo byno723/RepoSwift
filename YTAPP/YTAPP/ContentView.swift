@@ -9,7 +9,38 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-       Home()
+//        bottom tab
+        ZStack{
+            TabView{
+                Home()
+                .tabItem{
+                    Image(systemName: "house.fill")
+                    Text("Beranda")
+                }
+                Home()
+                .tabItem{
+                    Image(systemName: "paperplane.fill")
+                    Text("Explorasi")
+                }
+                Home()
+                .tabItem{
+                    Image(systemName: "tray.fill")
+                    Text("Subscription")
+                }
+                Home()
+                .tabItem{
+                    Image(systemName: "envelope.fill")
+                    Text("Kotak Masuk")
+                }
+                Home()
+                .tabItem{
+                    Image(systemName: "play.rectangle.fill")
+                    Text("Koleksi")
+                }
+               
+            }.accentColor(.red)
+        }
+
     }
 }
 
@@ -62,10 +93,28 @@ struct Home : View{
 struct konten :View{
     var body: some View{
         List{
+           cellKontent(imageKonten: "naruto", profilkonten: "profil", judul: "Naruto Shippuden", deskripsi: "Text ini adalah deskripsi -300x ditonton - 9 jam yang lalu", durasi: "10:10")
+            cellKontent(imageKonten: "naruto", profilkonten: "profil", judul: "Naruto Shippuden", deskripsi: "Text ini adalah deskripsi -300x ditonton - 9 jam yang lalu", durasi: "10:10")
+        }
+    }
+}
+
+
+//komponen
+struct cellKontent : View{
+    
+    var imageKonten :  String
+    var profilkonten : String
+    var judul : String
+    var deskripsi : String
+    var durasi : String
+    
+    var body: some View{
+        VStack{
             ZStack(alignment:.bottomTrailing){
-                Image("naruto").resizable().aspectRatio(contentMode: .fill)
+                Image(imageKonten).resizable().aspectRatio(contentMode: .fill)
                 
-                Text("10:00").padding(.all, 5)
+                Text(durasi).padding(.all, 5)
                     .foregroundColor(Color.white)
                     .font(.caption)
                     .background(Color.black)
@@ -74,11 +123,11 @@ struct konten :View{
                     .padding(.bottom,5)
             }
             HStack(spacing:10){
-                Image("profil").resizable().frame(width:30, height: 30).clipShape(Circle())
+                Image(profilkonten).resizable().frame(width:30, height: 30).clipShape(Circle())
                 VStack(alignment:.leading){
-                    Text("Naruto Shippuden #1").font(.headline)
+                    Text(judul).font(.headline)
                     HStack{
-                        Text("Text ini adalah deskripsi -300x ditonton - 9 jam yang lalu").font(.caption)
+                        Text(deskripsi).font(.caption)
                     }
                 }
                 Spacer()
