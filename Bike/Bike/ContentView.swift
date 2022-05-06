@@ -7,41 +7,25 @@
 
 import SwiftUI
 
-//model data
-struct ProductModel : Identifiable{
-    let id :Int
-    let namaProduct : String
-    let fotoProduct: String
-    let lokasi : String
-    let hargaProduct : Int
-    let ratingCount: Int
-    
-    init(id: Int, namaProduct : String, fotoProduct : String, lokasi : String, hargaProduct: Int, ratingCount: Int){
-        
-        self.id = id
-        self.namaProduct = namaProduct
-        self.fotoProduct = fotoProduct
-        self.lokasi = lokasi
-        self.ratingCount = ratingCount
-        self.hargaProduct  = hargaProduct
-        
-    }
-    
-}
 
 struct ContentView: View {
 //    data baru
-    let data : [ProductModel] = [
-        ProductModel(id: 1, namaProduct: "Polygon 1", fotoProduct: "sepeda2", lokasi: "Cianjur", hargaProduct: 2300000, ratingCount: 5),
-        ProductModel(id: 2, namaProduct: "Polygon 2", fotoProduct: "sepeda1", lokasi: "Cianjur", hargaProduct: 2100000, ratingCount: 3),
+    let data : [DataModel] = [
+        DataModel(id: 1, namaProduct: "Polygon 1", fotoProduct: "sepeda2", lokasi: "Cianjur", hargaProduct: 2300000, ratingCount: 5),
+        DataModel(id: 2, namaProduct: "Polygon 2", fotoProduct: "sepeda1", lokasi: "Cianjur", hargaProduct: 2100000, ratingCount: 3),
     ]
     
+    
+//    @State var jumlahkeranjang : Int = 0
+    @ObservedObject var globaldata = GlobalObject()
+    
     var body: some View {
+        
         NavigationView{
             ScrollView{
                 ForEach(data){row in
                     VStack(spacing:10){
-                        Product(data: row)
+                        Product(data: row, jumlahkeranjang: self.globaldata)
                     }
                     .padding()
                 }
@@ -51,13 +35,56 @@ struct ContentView: View {
                 Button(action:{print("ok")}){
                     Image(systemName: "person.fill")
                 }
-                Button(action:{print("ok")}){
-                    Image(systemName: "cart.fill")
+                NavigationLink(destination:DetailView(globaldata: globaldata)){
+               KeranjangView(jumlahkeranjang: globaldata)
                 }
+                
             })
         }
         .accentColor(Color.secondary)
         .navigationViewStyle(StackNavigationViewStyle())
+    }
+}
+
+struct KeranjangView : View{
+    
+//    @Binding var jumlah : Int
+    @ObservedObject var jumlahkeranjang : GlobalObject
+    
+    var body: some View{
+        ZStack{
+          
+                Image(systemName: "cart.fill")
+            
+            Text("\(self.jumlahkeranjang.jumlah)")
+                .foregroundColor(Color.white)
+                .frame(width:10, height: 10)
+                .font(.body)
+                .padding(5)
+                .background(Color.red)
+                .clipShape(Circle())
+                .offset(x:12)
+                .offset(y:-10)
+        }
+    }
+}
+
+struct DetailView : View{
+    @ObservedObject var globaldata : GlobalObject
+    
+    var body: some View{
+        NavigationView{
+            Text("Detail")
+                .navigationBarTitle("Detail")
+                .navigationBarItems( trailing: HStack(spacing:20){
+                 
+                        Image(systemName: "person.fill")
+                    
+                    KeranjangView(jumlahkeranjang: globaldata)
+                  
+                    
+                })
+        }
     }
 }
 
@@ -69,7 +96,10 @@ struct ContentView_Previews: PreviewProvider {
 
 struct Product : View{
 //    properti
-    let data : ProductModel
+    let data : DataModel
+//    @Binding var jumlahProduct : Int
+    
+    @ObservedObject var jumlahkeranjang : GlobalObject
     
     var body: some View{
         VStack(alignment:.leading){
@@ -106,19 +136,33 @@ struct Product : View{
             }
             .padding(.leading).padding(.trailing)
             
-            Button(action:{print("ok")}){
-                HStack{
-                    Spacer()
-                    HStack{
-                        Image(systemName: "cart")
-                        Text("Tambah ke keranjang")
-                            .font(.callout).padding()
-                    }
-                    Spacer()
-                }
-            }.background(Color.green).foregroundColor(Color.white).cornerRadius(10).padding()
+            tambahKeranjang(keranjang: jumlahkeranjang)
+           
         }
         .background(Color("warna"))
         .cornerRadius(10)
+    }
+}
+
+//button
+struct tambahKeranjang : View{
+    
+//    @Binding var jumlah:Int
+    
+    @ObservedObject var keranjang : GlobalObject
+    
+    var body: some View{
+        Button(action:{self.keranjang.jumlah+=1}){
+            HStack{
+                Spacer()
+                HStack{
+                    Image(systemName: "cart")
+                    Text("Tambah ke keranjang")
+                        .font(.callout).padding()
+                }
+                Spacer()
+            }
+        }.background(Color.green).foregroundColor(Color.white).cornerRadius(10).padding()
+   
     }
 }
