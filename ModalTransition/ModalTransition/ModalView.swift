@@ -31,9 +31,6 @@ struct ModalView : View{
                     .onTapGesture {
                         isShowing = true
                     }
-                VStack{
-                    Text("Hello")
-                }
                 .frame(height:400)
                 .frame(maxWidth:.infinity)
                 
