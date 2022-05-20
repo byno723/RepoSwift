@@ -11,6 +11,9 @@ struct SearchView: View {
     
     var animation : Namespace.ID
     
+//    shared data
+    @EnvironmentObject var sharedData: SharedDataModel
+    
     @EnvironmentObject var homeData : HomeViewModel
 //    Activating text field with the help of focusstate
     @FocusState var startTF : Bool
@@ -25,6 +28,8 @@ struct SearchView: View {
                         homeData.searchActivated = false
                     }
                     homeData.searchText = ""
+//                    resseting ...
+                    sharedData.fromSearchPage = false
                 }label: {
                     Image(systemName: "arrow.left").font(.title2).foregroundColor(Color.black.opacity(0.7))
                 }
@@ -100,7 +105,16 @@ struct SearchView: View {
     @ViewBuilder
     func ProductCardView(product : Product)->some View{
         VStack(spacing:10){
-            Image(product.productImage).resizable().aspectRatio(contentMode: .fit)
+            
+            ZStack{
+                if sharedData.showDetailProduct{
+                    Image(product.productImage).resizable().aspectRatio(contentMode: .fit).opacity(0)
+                }else{
+                    Image(product.productImage).resizable().aspectRatio(contentMode: .fit)
+                        .matchedGeometryEffect(id: "\(product.id)SEARCH", in: animation)
+                }
+            }
+          
 //            moving image to top to look like its fixed at half top
                 .offset(y:-50)
                 .padding(.bottom,-50)
@@ -116,12 +130,21 @@ struct SearchView: View {
         .background(
             Color.white.cornerRadius(25)
         ).padding(.top,50)
+        
+//        showing product detail when tapped
+        .onTapGesture {
+            withAnimation(.easeInOut){
+                sharedData.detailProduct = product
+                sharedData.showDetailProduct = true
+            }
+        }
+        
     }
     
 }
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
-       Home()
+       MainPage()
     }
 }

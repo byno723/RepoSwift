@@ -11,6 +11,13 @@ struct MainPage: View {
 //    current tab
     @State var currentTab : Tab = .Home
     
+    @StateObject var sharedData :  SharedDataModel = SharedDataModel()
+    
+//    animation Namespace
+    @Namespace var animation
+    
+    
+//    hiding tab bar
     init(){
         UITabBar.appearance().isHidden = true
     }
@@ -22,16 +29,19 @@ struct MainPage: View {
             
             TabView(selection: $currentTab){
                 
-              Home()
+              Home(animation: animation)
+                    .environmentObject(sharedData)
                     .tag(Tab.Home)
                 
-                Text("Liked")
+                LikedPage()
+                    .environmentObject(sharedData)
                     .tag(Tab.Liked)
                 
                 ProfilePage()
                     .tag(Tab.Profile)
                 
-                Text("Cardffdt")
+               CartPage()
+                    .environmentObject(sharedData)
                     .tag(Tab.Cart)
             }
 //            Custume tab bar
@@ -60,6 +70,18 @@ struct MainPage: View {
                 .padding(.bottom,10)
         }
         .background(Color.teal).ignoresSafeArea()
+        
+        .overlay(
+            ZStack{
+//                detail page
+                if let product = sharedData.detailProduct, sharedData.showDetailProduct{
+                    
+                    ProductDetailView(product: product, animation: animation).environmentObject(sharedData)
+//                        adding transition
+//                        .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .opacity))
+                }
+            }
+        )
        
     }
 }
