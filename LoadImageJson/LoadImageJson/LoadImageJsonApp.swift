@@ -11,7 +11,8 @@ import SwiftUI
 struct LoadImageJsonApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(NewsModels())
+//            ContentView()
         }
     }
 }

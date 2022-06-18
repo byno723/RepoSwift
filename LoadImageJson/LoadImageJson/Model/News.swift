@@ -13,3 +13,4 @@ struct News : Identifiable {
     var image : String
     var description : String
 }
+

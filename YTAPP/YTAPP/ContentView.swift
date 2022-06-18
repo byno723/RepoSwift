@@ -17,7 +17,7 @@ struct ContentView: View {
                     Image(systemName: "house.fill")
                     Text("Beranda")
                 }
-                Home()
+                Register()
                 .tabItem{
                     Image(systemName: "paperplane.fill")
                     Text("Explorasi")

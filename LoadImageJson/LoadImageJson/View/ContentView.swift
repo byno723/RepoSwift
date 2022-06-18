@@ -9,6 +9,8 @@ import SwiftUI
 import SDWebImageSwiftUI
 
 struct ContentView: View {
+    
+    
     var body: some View {
         NavigationView{
             Home()
@@ -26,25 +28,36 @@ struct ContentView_Previews: PreviewProvider {
 
 
 struct Home : View{
-    @ObservedObject var News = NewsModels()
+    @EnvironmentObject var News : NewsModels
+    
+    @Namespace var animation
+    
+//    @ObservedObject var News = NewsModels()
     
     var body: some View{
         List(News.data){ i in
-            HStack{
-                if i.image != "" {
-                    WebImage(url: URL(string: i.image)!)
-                        .resizable().scaledToFill().frame(width:120, height: 170)
-                        .background(Color.secondary)
-                        .cornerRadius(10)
-                }else{
-                    Image("loader").resizable().frame(width: 120, height: 170).cornerRadius(10)
+            NavigationLink(destination: DetailView(item : i, animation: animation),
+            label: {
+                HStack{
+                    if i.image != "" {
+                        WebImage(url: URL(string: i.image))
+                            .resizable().scaledToFill()
+                            
+                            .frame(width:120, height: 170)
+                            .matchedGeometryEffect(id: "image\(i.id)", in: animation)
+                            .background(Color.secondary)
+                            .cornerRadius(10)
+                    }else{
+                        Image("loader").resizable().frame(width: 120, height: 170).cornerRadius(10)
+                    }
+                    
+                    VStack(alignment:.leading, spacing: 10){
+                        Text(i.title).fontWeight(.bold)
+                        Text(i.description).font(.caption).lineLimit(4).multilineTextAlignment(.leading)
+                    }
                 }
-                
-                VStack(alignment:.leading, spacing: 10){
-                    Text(i.title).fontWeight(.bold)
-                    Text(i.description).font(.caption).lineLimit(4).multilineTextAlignment(.leading)
-                }
-            }
+            })
+          
         }
     }
 }

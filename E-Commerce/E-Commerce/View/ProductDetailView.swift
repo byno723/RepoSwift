@@ -63,6 +63,7 @@ struct ProductDetailView: View {
 //                product data
                 VStack(alignment: .leading, spacing: 15){
                     Text(product.title).font(.system(size: 20, weight: .bold))
+                        .matchedGeometryEffect(id: "\(product.id)\(sharedData.fromSearchPage ? "SEARCH" : "TITLE")", in: animation)
                     
                     Text(product.subtitle).font(.system(size: 18, weight: .regular)).foregroundColor(.secondary)
                     

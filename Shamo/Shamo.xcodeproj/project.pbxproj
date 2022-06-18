@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		374B9788284482AC0094D183 /* ShamoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B9787284482AC0094D183 /* ShamoApp.swift */; };
+		374B978A284482AC0094D183 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B9789284482AC0094D183 /* ContentView.swift */; };
+		374B978C284482AD0094D183 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 374B978B284482AD0094D183 /* Assets.xcassets */; };
+		374B978F284482AD0094D183 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 374B978E284482AD0094D183 /* Preview Assets.xcassets */; };
+		374B9797284483510094D183 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B9796284483510094D183 /* Login.swift */; };
+		374B979928449B9D0094D183 /* register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B979828449B9D0094D183 /* register.swift */; };
+		374B979E2844A8AA0094D183 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B979D2844A8AA0094D183 /* Home.swift */; };
+		374B97A02844A9040094D183 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B979F2844A9040094D183 /* MainView.swift */; };
+		374B97A22844ACC20094D183 /* wishlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B97A12844ACC20094D183 /* wishlist.swift */; };
+		374B97A42844ACFA0094D183 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B97A32844ACFA0094D183 /* Chat.swift */; };
+		374B97A62844AD1C0094D183 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B97A52844AD1B0094D183 /* Cart.swift */; };
+		374B97A82844AD370094D183 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B97A72844AD370094D183 /* Profile.swift */; };
+		374B97AA2844B68D0094D183 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B97A92844B68D0094D183 /* TabButton.swift */; };
+		374B97AC2844C1FA0094D183 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B97AB2844C1FA0094D183 /* Category.swift */; };
+		374B97AE2844C7D70094D183 /* ProductTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B97AD2844C7D70094D183 /* ProductTile.swift */; };
+		374B97B02845C53C0094D183 /* ChatTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B97AF2845C53C0094D183 /* ChatTile.swift */; };
+		374B97B22845CEF70094D183 /* WishlistCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B97B12845CEF70094D183 /* WishlistCard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		374B9784284482AC0094D183 /* Shamo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shamo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		374B9787284482AC0094D183 /* ShamoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShamoApp.swift; sourceTree = "<group>"; };
+		374B9789284482AC0094D183 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		374B978B284482AD0094D183 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		374B978E284482AD0094D183 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		374B9796284483510094D183 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		374B979828449B9D0094D183 /* register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = register.swift; sourceTree = "<group>"; };
+		374B979D2844A8AA0094D183 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		374B979F2844A9040094D183 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		374B97A12844ACC20094D183 /* wishlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wishlist.swift; sourceTree = "<group>"; };
+		374B97A32844ACFA0094D183 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		374B97A52844AD1B0094D183 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		374B97A72844AD370094D183 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		374B97A92844B68D0094D183 /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
+		374B97AB2844C1FA0094D183 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		374B97AD2844C7D70094D183 /* ProductTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTile.swift; sourceTree = "<group>"; };
+		374B97AF2845C53C0094D183 /* ChatTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTile.swift; sourceTree = "<group>"; };
+		374B97B12845CEF70094D183 /* WishlistCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistCard.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		374B9781284482AC0094D183 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		374B977B284482AC0094D183 = {
+			isa = PBXGroup;
+			children = (
+				374B9786284482AC0094D183 /* Shamo */,
+				374B9785284482AC0094D183 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		374B9785284482AC0094D183 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				374B9784284482AC0094D183 /* Shamo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		374B9786284482AC0094D183 /* Shamo */ = {
+			isa = PBXGroup;
+			children = (
+				374B9795284482EC0094D183 /* View */,
+				374B9787284482AC0094D183 /* ShamoApp.swift */,
+				374B978B284482AD0094D183 /* Assets.xcassets */,
+				374B978D284482AD0094D183 /* Preview Content */,
+			);
+			path = Shamo;
+			sourceTree = "<group>";
+		};
+		374B978D284482AD0094D183 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				374B978E284482AD0094D183 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		374B9795284482EC0094D183 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				374B979A2844A7DB0094D183 /* Tabview */,
+				374B9789284482AC0094D183 /* ContentView.swift */,
+				374B9796284483510094D183 /* Login.swift */,
+				374B979828449B9D0094D183 /* register.swift */,
+				374B979F2844A9040094D183 /* MainView.swift */,
+				374B97AB2844C1FA0094D183 /* Category.swift */,
+				374B97AD2844C7D70094D183 /* ProductTile.swift */,
+				374B97AF2845C53C0094D183 /* ChatTile.swift */,
+				374B97B12845CEF70094D183 /* WishlistCard.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		374B979A2844A7DB0094D183 /* Tabview */ = {
+			isa = PBXGroup;
+			children = (
+				374B979D2844A8AA0094D183 /* Home.swift */,
+				374B97A12844ACC20094D183 /* wishlist.swift */,
+				374B97A32844ACFA0094D183 /* Chat.swift */,
+				374B97A52844AD1B0094D183 /* Cart.swift */,
+				374B97A72844AD370094D183 /* Profile.swift */,
+				374B97A92844B68D0094D183 /* TabButton.swift */,
+			);
+			path = Tabview;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		374B9783284482AC0094D183 /* Shamo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 374B9792284482AD0094D183 /* Build configuration list for PBXNativeTarget "Shamo" */;
+			buildPhases = (
+				374B9780284482AC0094D183 /* Sources */,
+				374B9781284482AC0094D183 /* Frameworks */,
+				374B9782284482AC0094D183 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shamo;
+			productName = Shamo;
+			productReference = 374B9784284482AC0094D183 /* Shamo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		374B977C284482AC0094D183 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					374B9783284482AC0094D183 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 374B977F284482AC0094D183 /* Build configuration list for PBXProject "Shamo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 374B977B284482AC0094D183;
+			productRefGroup = 374B9785284482AC0094D183 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				374B9783284482AC0094D183 /* Shamo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		374B9782284482AC0094D183 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				374B978F284482AD0094D183 /* Preview Assets.xcassets in Resources */,
+				374B978C284482AD0094D183 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		374B9780284482AC0094D183 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				374B9797284483510094D183 /* Login.swift in Sources */,
+				374B97A82844AD370094D183 /* Profile.swift in Sources */,
+				374B97A62844AD1C0094D183 /* Cart.swift in Sources */,
+				374B97AE2844C7D70094D183 /* ProductTile.swift in Sources */,
+				374B97AC2844C1FA0094D183 /* Category.swift in Sources */,
+				374B97B22845CEF70094D183 /* WishlistCard.swift in Sources */,
+				374B97A22844ACC20094D183 /* wishlist.swift in Sources */,
+				374B97A02844A9040094D183 /* MainView.swift in Sources */,
+				374B978A284482AC0094D183 /* ContentView.swift in Sources */,
+				374B979E2844A8AA0094D183 /* Home.swift in Sources */,
+				374B97A42844ACFA0094D183 /* Chat.swift in Sources */,
+				374B97AA2844B68D0094D183 /* TabButton.swift in Sources */,
+				374B979928449B9D0094D183 /* register.swift in Sources */,
+				374B9788284482AC0094D183 /* ShamoApp.swift in Sources */,
+				374B97B02845C53C0094D183 /* ChatTile.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		374B9790284482AD0094D183 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		374B9791284482AD0094D183 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		374B9793284482AD0094D183 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Shamo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Gorbyno.Shamo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		374B9794284482AD0094D183 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Shamo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Gorbyno.Shamo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		374B977F284482AC0094D183 /* Build configuration list for PBXProject "Shamo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				374B9790284482AD0094D183 /* Debug */,
+				374B9791284482AD0094D183 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		374B9792284482AD0094D183 /* Build configuration list for PBXNativeTarget "Shamo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				374B9793284482AD0094D183 /* Debug */,
+				374B9794284482AD0094D183 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 374B977C284482AC0094D183 /* Project object */;
+}

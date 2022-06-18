@@ -12,29 +12,26 @@ import SwiftyJSON
 class NewsModels : ObservableObject{
     @Published var data = [News]()
     
-    init(){
-        let url = "https://newsapi.org/v2/everything?q=tesla&from=2022-04-20&sortBy=publishedAt&apiKey=783851f5d9724fa29edd960aa18baeac"
+    init()
+    {
+        let url = "https://newsapi.org/v2/everything?q=tesla&from=2022-04-26&sortBy=publishedAt&apiKey=f4e6b3fe46cd4e7699cd929add385428"
         
         let session = URLSession(configuration: .default)
-        
-        session.dataTask(with: URL(string: url)!){
-            (data, _, err) in
-            if err != nil {
+        session.dataTask(with: URL(string: url)!){(data, _, err) in
+            
+            if err != nil{
                 print((err?.localizedDescription)!)
                 return
             }
-            
             let json = try! JSON(data: data!)
-            
             let items = json["articles"].array!
-             
-            for i  in items{
+            for i in items{
                 let title = i["title"].stringValue
                 let description = i["description"].stringValue
-                let imageUrl = i["urlToImage"].stringValue
+                let imageurl = i["urlToImage"].stringValue
                 
-                DispatchQueue.main.async {
-                    self.data.append(News( title: title, image: imageUrl, description: description))
+                DispatchQueue.main.async{
+                    self.data.append(News(title: title, image: imageurl, description: description))
                 }
             }
         }.resume()
