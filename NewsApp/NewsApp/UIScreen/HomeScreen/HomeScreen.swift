@@ -10,32 +10,34 @@ import SwiftUI
 
 struct HomeScreen: View {
     
-    @ObservedObject var viewModel : HomeScreenViewModel = HomeScreenViewModel()
+    @ObservedObject var viewModel : HomeScreenViewModel 
     
     var body: some View {
         ZStack{
-            renderNav()
+//            renderNav()
+            viewModel.onCreateNavigationLinks()
             render()
         }
     }
-    private func renderNav()-> some View {
-        NavigationLink(
-            destination: DetailScreen(
-                viewModel: DetailScreenViewModel(
-                    dataDetailNews: viewModel.selectedNews
-                )
-            ),
-            tag: ScreenName.detailScreen.rawValue,
-            selection: $viewModel.navigationSelection)
-        {EmptyView()}
-    }
+//    private func renderNav()-> some View {
+//        NavigationLink(
+//            destination: DetailScreen(
+//                viewModel: DetailScreenViewModel(
+//                    dataDetailNews: viewModel.selectedNews
+//                )
+//            ),
+//            tag: ScreenName.detailScreen.rawValue,
+//            selection: $viewModel.navigationSelection)
+//        {EmptyView()}
+//    }
     
     private func renderNews(_ news : NewsObject)-> some View{
      
         Button {
-            viewModel.selectedNews = news
-            print(viewModel.selectedNews.title)
-            viewModel.navigationSelection = ScreenName.detailScreen.rawValue
+//            viewModel.selectedNews = news
+//            print(viewModel.selectedNews.title)
+//            viewModel.navigationSelection = ScreenName.detailScreen.rawValue
+            viewModel.selectNews(news)
         } label: {
             
             VStack{
@@ -47,13 +49,16 @@ struct HomeScreen: View {
 
     }
     private func render()-> some View{
-        ScrollView{
-            LazyVStack(spacing:20){
-                ForEach(viewModel.newsList, id:\.self){
-                    renderNews($0)
-                }
-            }.padding([.horizontal,.vertical], 20)
-                .navigationBarTitle("News Ku")
-        }.onAppear(perform: viewModel.loadData)
+     
+            ScrollView{
+                LazyVStack(spacing:20){
+                    ForEach(viewModel.newsList, id:\.self){
+                        renderNews($0)
+                    }
+                }.padding([.horizontal,.vertical], 20)
+                    .navigationBarTitle("News Ku")
+            }
+            .onAppear(perform: viewModel.loadData)
+      
     }
 }

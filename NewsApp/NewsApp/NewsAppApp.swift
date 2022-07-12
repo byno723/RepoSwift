@@ -12,7 +12,7 @@ struct NewsAppApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView{
-                HomeScreen()
+              HomeScreenCordinator()
             }
             .accentColor(.black)
         }
