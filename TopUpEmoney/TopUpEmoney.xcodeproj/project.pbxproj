@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3735AE652865CDC100633822 /* TopUpEmoneyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3735AE642865CDC100633822 /* TopUpEmoneyApp.swift */; };
+		3735AE672865CDC100633822 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3735AE662865CDC100633822 /* ContentView.swift */; };
+		3735AE692865CDC200633822 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3735AE682865CDC200633822 /* Assets.xcassets */; };
+		3735AE6C2865CDC200633822 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3735AE6B2865CDC200633822 /* Preview Assets.xcassets */; };
+		3735AE752865CF8F00633822 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3735AE742865CF8F00633822 /* CustomTextField.swift */; };
+		3735AE772865D39600633822 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3735AE762865D39600633822 /* PrimaryButton.swift */; };
+		3735AE792865D67000633822 /* SavedListCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3735AE782865D67000633822 /* SavedListCustom.swift */; };
+		3735AE7B2865D8E200633822 /* BillPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3735AE7A2865D8E200633822 /* BillPayment.swift */; };
+		3735AE7D2865DCE800633822 /* CustomList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3735AE7C2865DCE800633822 /* CustomList.swift */; };
+		3735AE7F2865E09C00633822 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3735AE7E2865E09C00633822 /* Route.swift */; };
+		3735AE812865E88500633822 /* TransactionSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3735AE802865E88500633822 /* TransactionSummary.swift */; };
+		3735AE832865F91F00633822 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3735AE822865F91F00633822 /* SuccessView.swift */; };
+		3735AE852866141500633822 /* ListCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3735AE842866141500633822 /* ListCategory.swift */; };
+		375C5B402869B5D2003F30AF /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375C5B3F2869B5D2003F30AF /* CategoryModel.swift */; };
+		375C5B432869BD5D003F30AF /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375C5B422869BD5D003F30AF /* ViewModel.swift */; };
+		E65BA31E6587D4E388DC03B1 /* Pods_TopUpEmoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091C5885C31581F6FAF70427 /* Pods_TopUpEmoney.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		091C5885C31581F6FAF70427 /* Pods_TopUpEmoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopUpEmoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3735AE612865CDC100633822 /* TopUpEmoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopUpEmoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3735AE642865CDC100633822 /* TopUpEmoneyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpEmoneyApp.swift; sourceTree = "<group>"; };
+		3735AE662865CDC100633822 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3735AE682865CDC200633822 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3735AE6B2865CDC200633822 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3735AE742865CF8F00633822 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		3735AE762865D39600633822 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		3735AE782865D67000633822 /* SavedListCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedListCustom.swift; sourceTree = "<group>"; };
+		3735AE7A2865D8E200633822 /* BillPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillPayment.swift; sourceTree = "<group>"; };
+		3735AE7C2865DCE800633822 /* CustomList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomList.swift; sourceTree = "<group>"; };
+		3735AE7E2865E09C00633822 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		3735AE802865E88500633822 /* TransactionSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionSummary.swift; sourceTree = "<group>"; };
+		3735AE822865F91F00633822 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
+		3735AE842866141500633822 /* ListCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCategory.swift; sourceTree = "<group>"; };
+		375C5B3F2869B5D2003F30AF /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		375C5B422869BD5D003F30AF /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		6FCE985709C5356D8D331BDB /* Pods-TopUpEmoney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopUpEmoney.release.xcconfig"; path = "Target Support Files/Pods-TopUpEmoney/Pods-TopUpEmoney.release.xcconfig"; sourceTree = "<group>"; };
+		996E6CBEA72D8521E62AD0BD /* Pods-TopUpEmoney.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopUpEmoney.debug.xcconfig"; path = "Target Support Files/Pods-TopUpEmoney/Pods-TopUpEmoney.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3735AE5E2865CDC100633822 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E65BA31E6587D4E388DC03B1 /* Pods_TopUpEmoney.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3735AE582865CDC100633822 = {
+			isa = PBXGroup;
+			children = (
+				3735AE632865CDC100633822 /* TopUpEmoney */,
+				3735AE622865CDC100633822 /* Products */,
+				DE1BB483A1D3F4DD33221BA9 /* Pods */,
+				72693F963F444EFA8098CDD1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3735AE622865CDC100633822 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3735AE612865CDC100633822 /* TopUpEmoney.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3735AE632865CDC100633822 /* TopUpEmoney */ = {
+			isa = PBXGroup;
+			children = (
+				375C5B412869BD3C003F30AF /* ViewModel */,
+				3735AE732865CE5E00633822 /* UIComponents */,
+				3735AE722865CE5300633822 /* Model */,
+				3735AE642865CDC100633822 /* TopUpEmoneyApp.swift */,
+				3735AE7E2865E09C00633822 /* Route.swift */,
+				3735AE7A2865D8E200633822 /* BillPayment.swift */,
+				3735AE822865F91F00633822 /* SuccessView.swift */,
+				3735AE802865E88500633822 /* TransactionSummary.swift */,
+				3735AE842866141500633822 /* ListCategory.swift */,
+				3735AE662865CDC100633822 /* ContentView.swift */,
+				3735AE682865CDC200633822 /* Assets.xcassets */,
+				3735AE6A2865CDC200633822 /* Preview Content */,
+			);
+			path = TopUpEmoney;
+			sourceTree = "<group>";
+		};
+		3735AE6A2865CDC200633822 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3735AE6B2865CDC200633822 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3735AE722865CE5300633822 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				375C5B3F2869B5D2003F30AF /* CategoryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3735AE732865CE5E00633822 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				3735AE742865CF8F00633822 /* CustomTextField.swift */,
+				3735AE762865D39600633822 /* PrimaryButton.swift */,
+				3735AE782865D67000633822 /* SavedListCustom.swift */,
+				3735AE7C2865DCE800633822 /* CustomList.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		375C5B412869BD3C003F30AF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				375C5B422869BD5D003F30AF /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		72693F963F444EFA8098CDD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				091C5885C31581F6FAF70427 /* Pods_TopUpEmoney.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE1BB483A1D3F4DD33221BA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				996E6CBEA72D8521E62AD0BD /* Pods-TopUpEmoney.debug.xcconfig */,
+				6FCE985709C5356D8D331BDB /* Pods-TopUpEmoney.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3735AE602865CDC100633822 /* TopUpEmoney */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3735AE6F2865CDC200633822 /* Build configuration list for PBXNativeTarget "TopUpEmoney" */;
+			buildPhases = (
+				BE5493EC7C6F404AD82F1DAD /* [CP] Check Pods Manifest.lock */,
+				3735AE5D2865CDC100633822 /* Sources */,
+				3735AE5E2865CDC100633822 /* Frameworks */,
+				3735AE5F2865CDC100633822 /* Resources */,
+				BFBC6650B80B2E87EF150C3C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TopUpEmoney;
+			productName = TopUpEmoney;
+			productReference = 3735AE612865CDC100633822 /* TopUpEmoney.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3735AE592865CDC100633822 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					3735AE602865CDC100633822 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 3735AE5C2865CDC100633822 /* Build configuration list for PBXProject "TopUpEmoney" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3735AE582865CDC100633822;
+			productRefGroup = 3735AE622865CDC100633822 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3735AE602865CDC100633822 /* TopUpEmoney */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3735AE5F2865CDC100633822 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3735AE6C2865CDC200633822 /* Preview Assets.xcassets in Resources */,
+				3735AE692865CDC200633822 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BE5493EC7C6F404AD82F1DAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TopUpEmoney-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFBC6650B80B2E87EF150C3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TopUpEmoney/Pods-TopUpEmoney-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TopUpEmoney/Pods-TopUpEmoney-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TopUpEmoney/Pods-TopUpEmoney-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3735AE5D2865CDC100633822 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3735AE672865CDC100633822 /* ContentView.swift in Sources */,
+				375C5B402869B5D2003F30AF /* CategoryModel.swift in Sources */,
+				3735AE7B2865D8E200633822 /* BillPayment.swift in Sources */,
+				3735AE832865F91F00633822 /* SuccessView.swift in Sources */,
+				3735AE652865CDC100633822 /* TopUpEmoneyApp.swift in Sources */,
+				3735AE812865E88500633822 /* TransactionSummary.swift in Sources */,
+				375C5B432869BD5D003F30AF /* ViewModel.swift in Sources */,
+				3735AE772865D39600633822 /* PrimaryButton.swift in Sources */,
+				3735AE792865D67000633822 /* SavedListCustom.swift in Sources */,
+				3735AE7F2865E09C00633822 /* Route.swift in Sources */,
+				3735AE752865CF8F00633822 /* CustomTextField.swift in Sources */,
+				3735AE852866141500633822 /* ListCategory.swift in Sources */,
+				3735AE7D2865DCE800633822 /* CustomList.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3735AE6D2865CDC200633822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3735AE6E2865CDC200633822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3735AE702865CDC200633822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 996E6CBEA72D8521E62AD0BD /* Pods-TopUpEmoney.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TopUpEmoney/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Gorbyno.TopUpEmoney;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3735AE712865CDC200633822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FCE985709C5356D8D331BDB /* Pods-TopUpEmoney.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TopUpEmoney/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Gorbyno.TopUpEmoney;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3735AE5C2865CDC100633822 /* Build configuration list for PBXProject "TopUpEmoney" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3735AE6D2865CDC200633822 /* Debug */,
+				3735AE6E2865CDC200633822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3735AE6F2865CDC200633822 /* Build configuration list for PBXNativeTarget "TopUpEmoney" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3735AE702865CDC200633822 /* Debug */,
+				3735AE712865CDC200633822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3735AE592865CDC100633822 /* Project object */;
+}

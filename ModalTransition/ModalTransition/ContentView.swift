@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var showModal = true
+    @State private var showModal = false
     
     var body: some View {
         ZStack{

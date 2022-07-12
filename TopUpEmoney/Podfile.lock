@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.6.1)
+  - BottomSheet (1.0.6)
+
+DEPENDENCIES:
+  - Alamofire
+  - BottomSheet (from `https://github.com/weitieda/bottom-sheet.git`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+
+EXTERNAL SOURCES:
+  BottomSheet:
+    :git: https://github.com/weitieda/bottom-sheet.git
+
+CHECKOUT OPTIONS:
+  BottomSheet:
+    :commit: 4e074d49f3148577ac66cf47b85a99d016480d01
+    :git: https://github.com/weitieda/bottom-sheet.git
+
+SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  BottomSheet: 0a164143e34470cc332db0ce4e55d6da202d7ac6
+
+PODFILE CHECKSUM: 0f54d788cd37ca0b6fa580493d39aad13c321bee
+
+COCOAPODS: 1.11.3
