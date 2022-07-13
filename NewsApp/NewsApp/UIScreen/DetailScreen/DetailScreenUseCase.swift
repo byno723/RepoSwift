@@ -10,6 +10,7 @@ import Foundation
 class DetailScreenUseCase{
     private(set) var repository = Repository()
     var input = Input()
+    var output = Output()
     var callback = CallBack()
     
     func onLoad(){
@@ -18,6 +19,7 @@ class DetailScreenUseCase{
     }
     
     func onNext(){
+//        output.products = [product]
         callback.onNext()
     }
 }
@@ -25,6 +27,9 @@ class DetailScreenUseCase{
 extension DetailScreenUseCase{
     class Input{
         var Newsdata = NewsObject()
+    }
+    class Output{
+//        var products = [ProductsObject]()
     }
     
     class Repository{

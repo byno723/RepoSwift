@@ -6,29 +6,34 @@
 //
 
 import SwiftUI
+import Alamofire
+import AlamofireObjectMapper
 
 class ProductScreenUseCase{
     private(set) var repository = Repository()
-    var output = Output()
     var input = Input()
     var callback = Callback()
     
-    func onNext(){
-        callback.onNext()
+    func onLoad(){
+        Alamofire.request("https://private-fe77a9-finalproject9.apiary-mock.com/movie")
+            .responseObject{(response : DataResponse<ProductsResponse>) in
+                if let respProducts = response.result.value{
+                    self.repository.dataProduct = respProducts.productList
+                    self.callback.onSuccess()
+                }
+            }
     }
+    
 }
 
 extension ProductScreenUseCase{
     class Input{
-        
-    }
-    class Output{
-        
+       
     }
     class Repository{
-        
+        var dataProduct = [ProductsObject]()
     }
     class Callback{
-        var onNext : () -> Void = {return}
+        var onSuccess : () -> Void = {return}
     }
 }
