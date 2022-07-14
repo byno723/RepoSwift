@@ -12,6 +12,7 @@ import AlamofireObjectMapper
 class ProductScreenUseCase{
     private(set) var repository = Repository()
     var input = Input()
+    var output = Output()
     var callback = Callback()
     
     func onLoad(){
@@ -24,16 +25,25 @@ class ProductScreenUseCase{
             }
     }
     
+    func selectProducts(_ products: ProductsObject){
+        output.products = products
+        callback.onSelect()
+        print("select product")
+    }
 }
 
 extension ProductScreenUseCase{
     class Input{
-       
+      
+    }
+    class Output{
+        var products = ProductsObject()
     }
     class Repository{
         var dataProduct = [ProductsObject]()
     }
     class Callback{
         var onSuccess : () -> Void = {return}
+        var onSelect : ()-> Void = {return}
     }
 }
